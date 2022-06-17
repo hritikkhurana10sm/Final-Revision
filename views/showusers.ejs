@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Users</title>
+</head>
+<body>
+     
+         <h1>Users</h1>
+         <ul style="list-style: none;">
+           <% users.forEach(function(user){%>
+                      <li><%=user.username%></li>
+                      <li><%=user.email%></li>
+                      <li><img src="../uploads/<%= user.file %>" alt="" width="200px" height="200px"></li>
+                                     
+            <%})%>
+              <br><br><br><br>
+        </ul>
+</body>
+</html>
